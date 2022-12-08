@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -14,7 +12,12 @@ namespace SmallyBird
         private bool runOnStart;
 
         [SerializeField]
+        private bool listenOnce;
+
+        [SerializeField]
         private UnityEvent eventToCall;
+
+        private bool hasListened;
 
         private void Start()
         {
@@ -36,7 +39,9 @@ namespace SmallyBird
 
         void IBasicEventListener.Listen()
         {
+            if (hasListened && listenOnce) return;
             eventToCall?.Invoke();
+            hasListened = true;
         }
     }
 }

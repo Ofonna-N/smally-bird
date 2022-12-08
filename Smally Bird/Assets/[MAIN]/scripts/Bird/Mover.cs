@@ -26,7 +26,7 @@ namespace SmallyBird
 
         private void FixedUpdate()
         {
-            if (canMove)
+            if (canMove && !rb.isKinematic)
             {
                 Move();
             }

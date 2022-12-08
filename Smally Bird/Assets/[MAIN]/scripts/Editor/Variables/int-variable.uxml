@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:VisualElement name="comp">
+        <uie:IntegerField label="value" value="42" name="int-variable-input" binding-path="value" />
+        <ui:Button text="reset" display-tooltip-when-elided="true" name="reset-button" />
+    </ui:VisualElement>
+</ui:UXML>
