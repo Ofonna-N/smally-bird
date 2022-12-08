@@ -28,4 +28,12 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Button
       m_Flags: 0
+    - m_Name: 
+      m_Id: fd5d4966-fcfd-4b0b-80b6-c4b2e1c3f966
+      m_Path: <Mouse>/leftButton
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Button
+      m_Flags: 0
     m_Flags: 0

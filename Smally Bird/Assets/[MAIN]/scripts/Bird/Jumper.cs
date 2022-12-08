@@ -30,7 +30,7 @@ namespace SmallyBird
         public void Jump(InputAction.CallbackContext ctx)
         {
             //Console.WriteLine("Jump");
-            rb.velocity = Vector3.zero;
+            rb.velocity = new Vector3(0f, 0f, rb.velocity.z);
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         }
 
