@@ -9,8 +9,11 @@ namespace SmallyBird
         private LinkedList<IBasicEventListener> listeners = new LinkedList<IBasicEventListener>();
 
 
+        public bool IsRaised { get; private set; }
+
         public void Register(IBasicEventListener listener)
         {
+            if(listeners.Count <= 0)IsRaised = false;
             listeners.AddLast(listener);
         }
 
@@ -21,10 +24,12 @@ namespace SmallyBird
 
         public void Raise()
         {
+            if (!IsRaised) IsRaised = true;
             foreach (var listener in listeners)
             {
                 listener.Listen();
             }
         }
+
     }
 }

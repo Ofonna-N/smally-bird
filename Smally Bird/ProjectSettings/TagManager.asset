@@ -6,6 +6,9 @@ TagManager:
   tags:
   - crossed_pipe
   - pipe
+  - level-trigger
+  - bird
+  - floor
   layers:
   - Default
   - TransparentFX

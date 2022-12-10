@@ -25,7 +25,11 @@ namespace SmallyBird
         private void OnEnable()
         {
             Query();
-            if(bindOnQuery)Bind();
+        }
+
+        private void Start()
+        {
+            if (bindOnQuery) Bind();
         }
 
         private void Query()

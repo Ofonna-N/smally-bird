@@ -9,7 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfcacb9c710b21d438c2e4a57959ea25, type: 3}
-  m_Name: High Score
+  m_Script: {fileID: 11500000, guid: 6e36d979b0b617846b9f8453fbf14eff, type: 3}
+  m_Name: OnScrollLevel
   m_EditorClassIdentifier: 
-  value: 0
