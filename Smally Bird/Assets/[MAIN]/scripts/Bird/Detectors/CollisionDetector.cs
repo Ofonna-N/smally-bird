@@ -12,7 +12,7 @@ namespace SmallyBird
             if (collision.transform.CompareTag(detectionTag))
             {
                 //Debug.Log("Hit " + detectionTag);
-                _event.Raise();
+                _event?.Raise();
             }
         }
     }

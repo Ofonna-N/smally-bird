@@ -1,15 +1,16 @@
 .game-over-detail-text {
-    font-size: 32px;
+    font-size: 17px;
     margin-top: 0;
     width: 100%;
     -unity-text-align: middle-center;
     margin-bottom: 16px;
+    -unity-font-style: bold;
 }
 
 .default-btn {
     width: 60%;
     height: 32px;
-    background-color: rgba(255, 180, 162, 255);
+    background-color: rgb(255, 180, 162);
     -unity-background-scale-mode: stretch-to-fill;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -19,7 +20,7 @@
     border-right-width: 0;
     border-top-width: 0;
     border-bottom-width: 0;
-    color: rgba(255, 255, 255, 255);
+    color: rgb(255, 255, 255);
     -unity-font-style: bold;
     font-size: 18px;
 }
@@ -29,5 +30,10 @@
     height: 36px;
     transition-property: width, height, background-color;
     transition-duration: 0.25s, 0.25s, 0.25s;
-    background-color: rgba(255, 140, 112, 255);
+    background-color: rgb(255, 140, 112);
+}
+
+.game-text {
+    -unity-font: url('project://database/Assets/[MAIN]/Fonts/PressStart2/PressStart2P-Regular.ttf?fileID=12800000&guid=4ce3c2f63b32a384cbdb8cf1cb227518&type=3#PressStart2P-Regular');
+    -unity-font-definition: url('project://database/Assets/[MAIN]/Fonts/PressStart2/PressStart2P-Regular%20SDF.asset?fileID=11400000&guid=f27b070a37165714a94108f75f13bf3d&type=2#PressStart2P-Regular SDF');
 }

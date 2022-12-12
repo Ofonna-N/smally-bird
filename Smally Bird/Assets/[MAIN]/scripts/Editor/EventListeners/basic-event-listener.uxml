@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <uie:PropertyField binding-path="eventToListenTo" name="evt-to-listen-to" />
+    <uie:PropertyField binding-path="additionalEventsToListenTo" name="addition-evt-to-listen" />
+    <uie:PropertyField binding-path="runOnStart" name="run-on-start" />
+    <uie:PropertyField binding-path="listenOnce" name="listen-once" />
+    <uie:PropertyField binding-path="checkAgainstEvents" name="check-against-evts" />
+    <uie:PropertyField binding-path="eventsToCheck" name="evts-to-check" focusable="false" style="display: none;" />
+    <uie:PropertyField binding-path="eventToCall" name="evet-to-call" focusable="false" />
+</ui:UXML>

@@ -163,6 +163,21 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1580957324397372430, guid: 799e2ea11e000d44bb17f0fcdd6e991c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4951895849676084330, guid: 799e2ea11e000d44bb17f0fcdd6e991c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7697155111684847984, guid: 799e2ea11e000d44bb17f0fcdd6e991c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 799e2ea11e000d44bb17f0fcdd6e991c, type: 3}
 --- !u!4 &1645810908860832500 stripped
@@ -182,6 +197,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Level - Blocks (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6348954641767310064, guid: aa43ff7d4eaf99d46ba3307f3f9cfac0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6348954641767310071, guid: aa43ff7d4eaf99d46ba3307f3f9cfac0,
         type: 3}
@@ -269,6 +289,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Level - Blocks
+      objectReference: {fileID: 0}
+    - target: {fileID: 6348954641767310064, guid: aa43ff7d4eaf99d46ba3307f3f9cfac0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6348954641767310071, guid: aa43ff7d4eaf99d46ba3307f3f9cfac0,
         type: 3}

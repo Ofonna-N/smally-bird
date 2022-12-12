@@ -17,7 +17,7 @@ namespace SmallyBird
         [SerializeField]
         private bool listenOnce;
 
-        [SerializeField, Tooltip("If an event has been raised then we dont listen with event listener")]
+        [SerializeField, Tooltip("If selected events has been raised then this event listener stops listening for events")]
         private bool checkAgainstEvents;
 
         [SerializeField, Tooltip("Events to check against,")]
