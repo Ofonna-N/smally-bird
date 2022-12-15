@@ -2435,7 +2435,7 @@ MonoBehaviour:
   uIDocument: {fileID: 1774009048}
   elementID: high-score
   bindOnQuery: 0
-  prefix: 'High Score: '
+  prefix: 'BEST:'
   intVariable:
     type: 1
     variable_asset: {fileID: 11400000, guid: 01a737ae50873634a86e665f4db3fa28, type: 2}
@@ -2455,7 +2455,7 @@ MonoBehaviour:
   uIDocument: {fileID: 1774009048}
   elementID: current-score
   bindOnQuery: 0
-  prefix: 'Current Score: '
+  prefix: 'SCORE:'
   intVariable:
     type: 1
     variable_asset: {fileID: 11400000, guid: da570f407a461b847a92d254367e8b98, type: 2}
@@ -3649,7 +3649,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6478536213147159724, guid: f5edd8714fb38364d8612562af47f466, type: 3}
+  - {fileID: 2100000, guid: cf68ad6dfdb8d2b4592d7fd776195b43, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
