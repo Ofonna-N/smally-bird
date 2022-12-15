@@ -1,6 +1,7 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
     <uie:PropertyField binding-path="eventToListenTo" name="evt-to-listen-to" />
     <uie:PropertyField binding-path="additionalEventsToListenTo" name="addition-evt-to-listen" />
+    <uie:FloatField label="Delay" value="0" binding-path="delay" name="delay" />
     <uie:PropertyField binding-path="runOnStart" name="run-on-start" />
     <uie:PropertyField binding-path="listenOnce" name="listen-once" />
     <uie:PropertyField binding-path="checkAgainstEvents" name="check-against-evts" />

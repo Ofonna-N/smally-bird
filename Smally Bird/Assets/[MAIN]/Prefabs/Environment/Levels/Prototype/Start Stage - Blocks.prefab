@@ -1084,7 +1084,7 @@ GameObject:
   - component: {fileID: 1580957324397372430}
   - component: {fileID: 1580957324397372431}
   - component: {fileID: 1100197571239701386}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mesh
   m_TagString: floor
   m_Icon: {fileID: 0}

@@ -1,10 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Runtime.InteropServices;
+
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.InputSystem;
-using System;
+
 
 namespace SmallyBird
 {
@@ -12,9 +8,6 @@ namespace SmallyBird
     public class Jumper : MonoBehaviour
     {
         private Rigidbody rb;
-
-        [SerializeField]
-        private ButtonInput jumpInput;
 
         [SerializeField]
         private float jumpForce = 20f;
@@ -28,7 +21,7 @@ namespace SmallyBird
         }
 
 
-        public void Jump(InputAction.CallbackContext ctx)
+        public void Jump()
         {
             //Console.WriteLine("Jump");
             if (!canJump) return;
@@ -42,14 +35,5 @@ namespace SmallyBird
             canJump = value;
         }
 
-        private void OnEnable()
-        {
-            jumpInput.SubscribeToAction(Jump);
-        }
-
-        private void OnDisable()
-        {
-            jumpInput.UnSubscribeToAction(Jump);
-        }
     }
 }

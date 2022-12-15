@@ -24,6 +24,7 @@ public class BasicEevntListenerEditor : Editor
         checkAgainstEventsFlag = root.Q<PropertyField>("check-against-evts");
         eventsToCheck = root.Q<PropertyField>("evts-to-check");
 
+        //UnityEngine.Debug.Log(checkAgainstEventsFlag.userData);
 
         checkAgainstEventsFlag.RegisterCallback<ChangeEvent<bool>>((ChangeEvent<bool> evt) => 
         {

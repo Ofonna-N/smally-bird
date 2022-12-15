@@ -748,7 +748,7 @@ GameObject:
   - component: {fileID: 6348954642025209779}
   - component: {fileID: 6348954642025209788}
   - component: {fileID: 2612790454814010475}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mesh
   m_TagString: floor
   m_Icon: {fileID: 0}

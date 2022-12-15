@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -10,6 +11,9 @@ namespace SmallyBird
 
         [SerializeField]
         private BasicEvent[] additionalEventsToListenTo;
+
+        [SerializeField]
+        private float delay = 0;
 
         [SerializeField]
         private bool runOnStart;
@@ -71,6 +75,18 @@ namespace SmallyBird
 
         void IBasicEventListener.Listen()
         {
+            if (delay > 0)
+            {
+                StartCoroutine(AwaitListen());
+            }
+            else
+            {
+                OnListen();
+            }
+        }
+
+        private void OnListen()
+        {
             if (hasListened && listenOnce) return;
 
             if (checkAgainstEvents)
@@ -83,6 +99,12 @@ namespace SmallyBird
 
             eventToCall?.Invoke();
             hasListened = true;
+        }
+
+        IEnumerator AwaitListen()
+        {
+            yield return new WaitForSeconds(delay);
+            OnListen();
         }
     }
 }
